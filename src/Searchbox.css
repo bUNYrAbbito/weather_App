@@ -1,0 +1,54 @@
+/* Searchbox.css - Search component styles */
+.SearchBox {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+ ;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.SearchBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.SearchBox .MuiTextField-root {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.SearchBox .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.SearchBox .MuiButton-root {
+  background: linear-gradient(135deg, #3498db, #2980b9) !important;
+  padding: 12px 0 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.SearchBox .MuiButton-root:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .SearchBox {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .SearchBox .MuiButton-root {
+    padding: 10px 0 !important;
+  }
+}
